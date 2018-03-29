@@ -75,5 +75,20 @@ section pode ter várias -->
             <a href="https://profmarciotorres.github.io/atividade.html?dbo-2018/atividade/avaliada/1.md">#1</a>
             <a href="https://profmarciotorres.github.io/atividade.html?dbo-2018/atividade/avaliada/2.md">#2</a>
         </footer>
+      <label>Seu nome:</label>
+  <input value="Seu nome">
+  <button id="darthfy">Darthfy</button>
+  <output></output>
+  <button id="like">&#x1F44D;</button>
+    <span>Nenhum like ainda ...</span>
+    <script>
+        let like = document.querySelector('#like');
+let span = document.querySelector('span');
+let likes = 0;
+like.addEventListener('click', function() {
+    // ++algo; // é um pré-incremento
+    span.textContent = `${++likes} like(s)`;
+});
+    </script>
 </body>
 </html>
